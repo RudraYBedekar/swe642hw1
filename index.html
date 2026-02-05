@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Class Homepage</title>
+
+  <!-- Bootstrap (optional but allowed) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header-box">
+      <h1 class="mb-1">My Class Homepage</h1>
+      <div class="nav-links">
+        <a href="cs.html" class="btn btn-sm btn-outline-success">CS Department Info</a>
+        <a href="survey.html" class="btn btn-sm btn-warning">CS Survey Form</a>
+      </div>
+      <p class="mt-2 mb-0 form-hint">
+        This homepage is Part 1. It links to Part 2 pages (CS info + survey).
+      </p>
+    </header>
+
+    <main class="mt-4 card">
+      <div class="row align-items-center" style="grid-template-columns: 200px 1fr;">
+        <div>
+          <img class="profile" src="Rudra.jpg" alt="My photo">
+        </div>
+        <div>
+          <h2 class="mt-0">About Me</h2>
+          <p>
+            Hi! I’m <strong>Rudra Bedekar</strong>. I’m a student interested in software development,
+            cloud computing, and data systems. I enjoy turning messy telemetry and time-series data into clear insights using Python, SQL, and AWS, with an eye on root-cause analysis and system health.
+I’ve worked across data analytics, web development, and AI projects, and I like building things that are both practical and scalable.
+          </p>
+
+          <div class="gmu-accent">
+            <strong>Quick links:</strong>
+            <div>
+              <a href="cs.html">CS Department Information Page</a> |
+              <a href="survey.html">CS Department Survey Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-4 mb-5 text-center form-hint">
+      
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

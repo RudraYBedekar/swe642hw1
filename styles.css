@@ -1,0 +1,140 @@
+/* GMU colors */
+:root{
+  --gmu-green:#006633;
+  --gmu-yellow:#FFCC33;
+  --page-bg:#f2f2f2;
+  --text:#1d1d1f;
+}
+
+/* Page background requirement */
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+/* At least: h1 in GMU green */
+h1{
+  color: var(--gmu-green);
+}
+
+/* Heading at top inside rectangular box, solid border 5px in GMU green, with box-shadow */
+.header-box{
+  border: 5px solid var(--gmu-green);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  background: white;
+  padding: 18px 16px;
+  border-radius: 10px;
+}
+
+/* Custom style class usable anywhere (requirement) */
+.gmu-accent{
+  background: linear-gradient(90deg, var(--gmu-yellow), #ffe38a);
+  border-left: 6px solid var(--gmu-green);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+/* Simple layout helpers */
+.container{
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.card{
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.nav-links a{
+  margin-right: 12px;
+}
+
+img.profile{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 4px solid var(--gmu-yellow);
+}
+
+/* Required field indicator */
+.required-star{
+  color: #b00020;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.form-hint{
+  font-size: 0.92rem;
+  color: #444;
+}
+
+label{
+  font-weight: 600;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+}
+
+textarea{
+  min-height: 110px;
+  resize: vertical;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 700px){
+  .row{ grid-template-columns: 1fr; }
+}
+
+.inline-options{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+.inline-options input{
+  width: auto;
+}
+
+button{
+  background: var(--gmu-green);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  filter: brightness(0.95);
+}
+
+table{
+  width:100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td{
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+thead th{
+  background: #e9f3ee;
+}
